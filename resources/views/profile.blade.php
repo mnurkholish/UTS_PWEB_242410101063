@@ -52,7 +52,7 @@
 
                 <div class="rounded-2xl overflow-hidden border border-border bg-card md:flex">
 
-                    <img src="{{ asset($movie['image'] ?? 'images/movies/default-movie.png') }}"
+                    <img src="{{ asset($topMovie['image'] ?? 'images/movies/default-movie.png') }}"
                         onerror="this.onerror=null;this.src='{{ asset('images/movies/default-movie.png') }}';"
                         class="w-full md:w-1/3 h-64 object-cover">
 
