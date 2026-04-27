@@ -2,7 +2,6 @@
 
 @section('content')
     <div class="max-w-5xl mx-auto px-6 py-10 space-y-10">
-        {{-- HEADER --}}
         <div class="flex flex-col md:flex-row items-center gap-6">
 
             <img src="{{ asset('images/avatar.jpg') }}" class="w-24 h-24 rounded-full object-cover border border-border">
@@ -19,7 +18,6 @@
 
         </div>
 
-        {{-- STATS --}}
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
             <div class="p-6 rounded-2xl bg-card border border-border text-center">
@@ -45,16 +43,13 @@
 
         </div>
 
-        {{-- TOP MOVIE --}}
         @if ($topMovie)
             <div>
                 <h2 class="text-xl font-semibold mb-4">Top Movie</h2>
 
                 <div class="rounded-2xl overflow-hidden border border-border bg-card md:flex">
 
-                    <img src="{{ asset($topMovie['image'] ?? 'images/movies/default-movie.png') }}"
-                        onerror="this.onerror=null;this.src='{{ asset('images/movies/default-movie.png') }}';"
-                        class="w-full md:w-1/3 h-64 object-cover">
+                    <img src="{{ asset($topMovie['image']) }}" class="w-full md:w-1/3 h-64 object-cover">
 
                     <div class="p-6 flex flex-col justify-center">
 

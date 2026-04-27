@@ -44,7 +44,7 @@
 
             @foreach ($movies as $movie)
                 <div x-show="filter === 'all' || filter === '{{ $movie['status'] }}'"
-                    class="rounded-2xl overflow-hidden border border-border bg-card hover:scale-105 transition duration-300">
+                    class="rounded-2xl overflow-hidden border border-border bg-card">
 
                     <img src="{{ asset($movie['image'] ?? 'images/movies/default-movie.png') }}"
                         onerror="this.onerror=null;this.src='{{ asset('images/movies/default-movie.png') }}';"

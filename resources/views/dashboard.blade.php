@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-    {{-- HERO --}}
     <div class="relative h-[60vh] flex items-center justify-center text-center">
         <img src="{{ asset('images/hero.webp') }}" class="absolute inset-0 w-full h-full object-cover">
 
@@ -18,10 +17,8 @@
 
     </div>
 
-    {{-- CONTENT --}}
     <div class="max-w-7xl mx-auto px-6 py-10 space-y-10">
 
-        {{-- STAT --}}
         <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
 
             <div class="p-6 rounded-2xl bg-card border border-border text-center">
@@ -41,14 +38,13 @@
 
         </div>
 
-        {{-- DAFTAR MOVIE --}}
         <div>
             <h2 class="text-xl font-semibold mb-4">Recent Movies</h2>
 
             <div class="grid grid-cols-1 md:grid-cols-6 gap-6">
 
                 @foreach (array_slice($movies, 0, 6) as $movie)
-                    <div class="rounded-2xl overflow-hidden border border-border bg-card hover:scale-105 transition">
+                    <div class="rounded-2xl overflow-hidden border border-border bg-card">
 
                         <img src="{{ asset($movie['image'] ?? 'images/movies/default-movie.png') }}"
                             onerror="this.onerror=null;this.src='{{ asset('images/movies/default-movie.png') }}';"
@@ -64,7 +60,6 @@
                                 {{ $movie['genre'] }}
                             </p>
 
-                            <!-- Status -->
                             <span
                                 class="text-xs px-2 py-1 rounded-full
                                 {{ $movie['status'] == 'watched' ? 'bg-green-100 text-green-600' : 'bg-yellow-100 text-yellow-600' }}">
