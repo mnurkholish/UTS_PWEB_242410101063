@@ -22,21 +22,21 @@ Berikut adalah alur dari aplikasi ini:
 - Konten berisi beberapa film yang baru baru ini ditambahkan
 - Ada ringkasan statistik film juga
 
-3. Pengelolaan
-
-- Menampilkan daftar film dari array di controller
-- Data ditampilkan menggunakan loop (`@foreach`)
-- User dapat:
-    - Melihat status film (Watched / Watchlist)
-    - Filter film (Alpinejs)
-
-4. Profile
+3. Profile
 
 - Sistem menampilkan informasi user:
     - Username
     - Top Movie (diambil dari film rating tertinggi)
     - Ringkasan aktivitas (jumlah, film favorit dll)
 - Tombol logout di bagian bawah
+
+4. Pengelolaan
+
+- Menampilkan daftar film dari array di controller
+- Data ditampilkan menggunakan loop (`@foreach`)
+- User dapat:
+    - Melihat status film (Watched / Watchlist)
+    - Filter film (Alpinejs)
 
 <p align="end">- Author: Muchammad Nur Kholish</p>
 
@@ -62,20 +62,20 @@ Berikut adalah alur dari aplikasi ini:
 
 ---
 
-## Pengelolaan
-
-<p align="center">
-  <img src="public/images/ss/pengelolaan.png" width="75%" style="vertical-align: top;" />
-  <img src="public/images/ss/pengelolaan-m.png" width="24%" style="vertical-align: top;" />
-</p>
-
----
-
 ## Profile
 
 <p align="center">
   <img src="public/images/ss/profile.png" width="75%" style="vertical-align: top;" />
   <img src="public/images/ss/profile-m.png" width="24%" style="vertical-align: top;" />
+</p>
+
+---
+
+## Pengelolaan
+
+<p align="center">
+  <img src="public/images/ss/pengelolaan.png" width="75%" style="vertical-align: top;" />
+  <img src="public/images/ss/pengelolaan-m.png" width="24%" style="vertical-align: top;" />
 </p>
 
 ---
