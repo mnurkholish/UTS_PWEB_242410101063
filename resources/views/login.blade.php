@@ -41,7 +41,7 @@
                     class="w-full bg-transparent border-b border-white/40
                            py-2 outline-none placeholder:text-white/70">
                 @error('username')
-                    <p class="text-xs text-red-300">{{ $message }}</p>
+                    <p class="text-xs text-red-500">{{ $message }}</p>
                 @enderror
 
                 <input type="password" name="password" placeholder="Masukkan Password . . ."
@@ -49,7 +49,7 @@
                     class="w-full bg-transparent border-b border-white/40
                            py-2 outline-none placeholder:text-white/70">
                 @error('password')
-                    <p class="text-xs text-red-300">{{ $message }}</p>
+                    <p class="text-xs text-red-500">{{ $message }}</p>
                 @enderror
 
                 <div class="flex justify-between items-center text-xs text-white/80">
